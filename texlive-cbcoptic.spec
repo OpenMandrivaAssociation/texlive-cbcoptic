@@ -1,3 +1,9 @@
+# revision 16666
+# category Package
+# catalog-ctan /language/coptic/cbcoptic
+# catalog-date 2010-01-11 08:55:42 +0100
+# catalog-license lppl
+# catalog-version 0.2
 Name:		texlive-cbcoptic
 Version:	0.2
 Release:	1
@@ -54,6 +60,7 @@ some macros of philological interest.
 %doc %{_texmfdistdir}/doc/latex/cbcoptic/coptfont.pdf
 %doc %{_texmfdistdir}/doc/latex/cbcoptic/testcop.tex
 %doc %{_texmfdistdir}/doc/latex/cbcoptic/testcopOK.pdf
+%doc %{_tlpkgobjdir}/*.tlpobj
 
 #-----------------------------------------------------------------------
 %prep
@@ -64,3 +71,5 @@ some macros of philological interest.
 %install
 mkdir -p %{buildroot}%{_texmfdistdir}
 cp -fpar fonts tex doc %{buildroot}%{_texmfdistdir}
+mkdir -p %{buildroot}%{_tlpkgobjdir}
+cp -fpa tlpkg/tlpobj/*.tlpobj %{buildroot}%{_tlpkgobjdir}
