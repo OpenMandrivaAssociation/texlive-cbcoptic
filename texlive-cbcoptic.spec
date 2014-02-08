@@ -6,7 +6,7 @@
 # catalog-version 0.2
 Name:		texlive-cbcoptic
 Version:	0.2
-Release:	2
+Release:	3
 Summary:	Coptic fonts and LaTeX macros for general usage and for philology
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/language/coptic/cbcoptic
