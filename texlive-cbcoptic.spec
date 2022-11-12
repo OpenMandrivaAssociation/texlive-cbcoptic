@@ -1,18 +1,12 @@
-# revision 16666
-# category Package
-# catalog-ctan /language/coptic/cbcoptic
-# catalog-date 2010-01-11 08:55:42 +0100
-# catalog-license lppl
-# catalog-version 0.2
 Name:		texlive-cbcoptic
-Version:	0.2
-Release:	11
+Version:	16666
+Release:	1
 Summary:	Coptic fonts and LaTeX macros for general usage and for philology
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/language/coptic/cbcoptic
 License:	LPPL
-Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/cbcoptic.tar.xz
-Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/cbcoptic.doc.tar.xz
+Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/cbcoptic.r16666.tar.xz
+Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/cbcoptic.doc.r16666.tar.xz
 BuildArch:	noarch
 BuildRequires:	texlive-tlpkg
 Requires(pre):	texlive-tlpkg
@@ -28,12 +22,12 @@ pfb format. The bundle also includes a package that provides
 some macros of philological interest.
 
 %post
-    %{_sbindir}/texlive.post
+%{_sbindir}/texlive.post
 
 %postun
-    if [ $1 -eq 0 ]; then
+if [ $1 -eq 0 ]; then
 	%{_sbindir}/texlive.post
-    fi
+fi
 
 #-----------------------------------------------------------------------
 %files
@@ -54,25 +48,10 @@ some macros of philological interest.
 
 #-----------------------------------------------------------------------
 %prep
-%setup -c -a0 -a1
+%autosetup -p1 -c -a1
 
 %build
 
 %install
 mkdir -p %{buildroot}%{_texmfdistdir}
 cp -fpar fonts tex doc %{buildroot}%{_texmfdistdir}
-
-
-%changelog
-* Tue Jan 03 2012 Paulo Andrade <pcpa@mandriva.com.br> 0.2-2
-+ Revision: 750038
-- Rebuild to reduce used resources
-
-* Sat Nov 05 2011 Paulo Andrade <pcpa@mandriva.com.br> 0.2-1
-+ Revision: 718015
-- texlive-cbcoptic
-- texlive-cbcoptic
-- texlive-cbcoptic
-- texlive-cbcoptic
-- texlive-cbcoptic
-
