@@ -1,6 +1,6 @@
 Name:		texlive-cbcoptic
 Version:	16666
-Release:	1
+Release:	2
 Summary:	Coptic fonts and LaTeX macros for general usage and for philology
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/language/coptic/cbcoptic
