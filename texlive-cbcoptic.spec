@@ -3,7 +3,7 @@ Version:	16666
 Release:	2
 Summary:	Coptic fonts and LaTeX macros for general usage and for philology
 Group:		Publishing
-URL:		http://www.ctan.org/tex-archive/language/coptic/cbcoptic
+URL:		https://www.ctan.org/tex-archive/language/coptic/cbcoptic
 License:	LPPL
 Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/cbcoptic.r%{version}.tar.xz
 Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/cbcoptic.doc.r%{version}.tar.xz
